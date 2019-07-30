@@ -1,0 +1,34 @@
+
+<div class="PageNavigation">
+  <!-- select url for next and previous -->
+  {% assign posts = site.tutorials | where: "category", page.category %}
+  {% assign posts = posts | sort: "id" %}
+  {% for post in posts %}
+    {% if post.id == page.id %}
+      {% if forloop.index0 != 0 %}
+        {% assign pre_index = forloop.index0 | minus:"1" %}
+        {% assign post_previous = posts[pre_index] %}
+        {% assign post_previous_url = post_previous.url %}
+      {% endif %}
+
+      {% if forloop.rindex0 != 0 %}
+        {% assign next_index = forloop.index0 | plus:"1" %}
+        {% assign post_next = posts[next_index] %}
+        {% assign post_next_url = post_next.url %}
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+
+  <!-- assign url for next and previous -->
+  {% if post_previous_url %}
+  <a class="prev" href="{{post_previous_url}}">
+    <strong>&laquo;</strong> <i>{{ post_previous.title }}</i></a>
+  {% endif %}
+  {% if post_next_url %}
+  <a class="next" href="{{post_next_url}}">
+    <i>{{ post_next.title }}</i> <strong>&raquo;</strong></a>
+  {% endif %}
+</div>
+
+

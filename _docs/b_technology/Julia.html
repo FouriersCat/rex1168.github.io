@@ -1,0 +1,42 @@
+---
+title: Julia
+category: 爱技术
+order: 3
+icon-dir: /static/img/icon/ML_icon.png
+tut-dir: /tutorials/julia/
+description: 一种越来越火的科学计算语言.
+tut-course-detail:
+- ["/tutorials/julia/julia-base", "Julia基础", "/static/img/course_cover-small/julia-base.png"]
+- ["/tutorials/julia/julia-distributed-computing", "Julia Matlab", "/static/img/course_cover-small/null.png"]
+---
+
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+
+<div class="section ie-size">
+  <div class="pad-main">
+
+<ul class="tut-course-thumbnail">
+  {% for item in page.tut-course-detail %}
+  <li><a href="{{ item[0] }}/">
+      <img class="lazy-img" alt="{{ item[1] }}" src="{{ item[2] }}" 
+        title='{{ item[1] }}'>
+    </a></li>
+  {% endfor %}
+</ul>
+<br>
+
+<!-- <p>
+  {{ description.excerpt }}
+</p> -->
+
+<p style="font-size: 1.0em;">
+<strong>Julia</strong>是一门越来越火的编程语言。它是一种高级通用动态编程语言，它最初是为了满足高性能数值分析和计算科学的需要而设计的，不需要编译器速度快，也可用于客户端和服务器的Web用途、低级系统编程或用作规约语言。
+<p>
+Julia设计的独特之处包括，参数多态的类型系统，完全动态语言中的类型，以及它多分派的核心编程范型。它允许并发、并行和分布式计算，并直接调用C和Fortran库而不使用粘合代码。
+</p>
+</p>
+
+</div>
+</div>

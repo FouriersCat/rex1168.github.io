@@ -1,0 +1,35 @@
+---
+title: C\C++
+category: 爱技术
+order: 5
+icon-dir: /static/img/icon/cpp.png
+tut-dir: /tutorials/cpp/
+description: C++.
+tut-course-detail:
+- ["/tutorials/cpp/base", "c++基础", "/static/img/course_cover-small/cpp.png"]
+- ["/tutorials/cpp/advance", "c++高级", "/static/img/course_cover-small/cpp.png"]
+---
+
+<div class="section ie-size">
+  <div class="pad-main">
+
+
+<ul class="tut-course-thumbnail">
+  {% for item in page.tut-course-detail %}
+  <li><a href="{{ item[0] }}/">
+      <img class="lazy-img" alt="{{ item[1] }}" src="{{ item[2] }}" 
+        title='{{ item[1] }}'>
+    </a></li>
+  {% endfor %}
+</ul>
+<br>
+
+<!-- <p>
+  {{ description.excerpt }}
+</p> -->
+
+<p style="font-size: 1.0em;">
+<strong>内容待补充。。。。。</strong>
+</p>
+</div>
+</div>

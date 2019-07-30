@@ -1,0 +1,21 @@
+---
+title: "没有找到你的网页哦"
+permalink: /404.html
+description: "这里没有你所需要的页面哦"
+---
+
+<div class="section" >
+	<img src="/static/img/description/404-Page.png" alt="404 page" style="width:100%">
+
+	<div class="pad-main">
+		<h1 style="font-size:5em; display:none;">404</h1>
+		<p id="p-not-found" style="text-align:center;"></p>
+		<p style="text-align:center;">请检查网址是否正确, 或返回 <a href="/"><strong>Technomania</strong></a> 首页</p>
+	</div>
+
+</div>
+
+<script>
+	document.getElementById("p-not-found").innerHTML = "页面神秘消失: " + window.location.href;
+</script>
+

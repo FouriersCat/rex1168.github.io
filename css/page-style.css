@@ -1,0 +1,92 @@
+
+h1 .r-title{
+    margin-top: 10px;
+    font-size: 2em;
+    color: #000;
+    
+    
+  }
+  
+  h1 .r-job{
+    margin-top: 15px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+/* ======== footer ======== */
+
+footer {
+clear: both;
+color: var(--c-green-no-hover);
+color: #191818;
+font-size: 0.8em;
+
+filter: none !important;
+padding: 0px;
+margin: 0px;
+z-index: 5;
+/* position: absolute; */
+width: 100%;
+}
+
+footer p{
+color: var(--c-green-no-hover);
+color: #191818;
+display: block;
+clear: left;
+/* margin: 10px 15px; */
+padding-top: 7px;
+}
+
+footer ul{
+margin:0;
+list-style-type: none;
+}
+
+footer a, footer a:visited, footer a:link{
+color: var(--c-green-no-hover);
+color:#191818;
+}
+
+footer .icon {
+height: 22px;
+margin: 10px 0 0 0;
+}
+
+footer li {
+float: left;
+padding-right: 10px;
+padding-left: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+margin: 0;
+}
+
+.tut-course-thumbnail {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  }
+  
+  .tut-course-thumbnail li {
+  padding: 0 2px 0 0;
+  display: inline-block;
+  }
+  
+  .tut-course-thumbnail img {
+  max-width: 213px;
+  max-h
+  }
+  .tut-course-thumbnail img:hover {
+  background-color:#000;
+  opacity:0.8;
+  }
+
+  .pad-main {
+    /* padding: 3em 4em; */
+    /* box-shadow: 0 0 5px #888888 */
+    }
+
+

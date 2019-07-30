@@ -1,0 +1,34 @@
+---
+layout: front-page
+structured-type: Course
+---
+
+<!-- variables for this page -->
+{% assign category-tuts = site.tutorials | where: "category", page.category | sort: "id" %}
+{% assign tut-chapters = site.data.table-chapters[page.category] %}
+
+
+<!-- for this page contents -->
+<div class="section ie-size">
+	<img class="course-summary-image lazy-img" src="{{ page.tut-course-cover }}"  alt="{{ page.title }}">
+	<h1 style="display:none">{{ page.title }}</h1>
+</div>
+
+<ul class="table-of-contents-ul section ie-size">
+	{% for chapter-name in tut-chapters.chapter-names %}
+		{% assign chapter-id = forloop.index %}
+		<li class="chapter-li"><h4>{{chapter-name}}</h4>
+			<ol>
+			{% assign tuts = category-tuts | where: "chapter", forloop.index | sort: "index"  %}
+	    {% for tut in tuts  %}
+				{% assign section-id = forloop.index %}
+				<!-- {% if tut.title != "page default" %} -->
+		      <li class="content-li">
+		          <a href="{{site.baseurl}}{{ tut.url }}">{{chapter-id}}.{{section-id}} {{tut.title}}</a>
+		      </li>
+				<!-- {% endif %} -->
+		  {% endfor %}
+			</ol>
+		</li>
+	{% endfor %}
+</ul>

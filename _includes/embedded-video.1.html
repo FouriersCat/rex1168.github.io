@@ -1,0 +1,56 @@
+
+{% if page.no-video == true%}
+	<br><br>
+	<span style="color:#F56100;font-size: 2.5em;text-align: center;padding: 0.1em 0.2em;display: block;">
+		此节只有文字教学~</span>
+	<br>
+{% else %}
+	{% if page.b_av %}
+	<div id="videogfw" class="video-container">
+		<!-- video embedding-->
+		<script type="text/javascript">
+			var youtube_src = "//www.youtube.com/embed/{{page.youtube_id}}";
+			var youku_src = "//player.youku.com/embed/{{page.youku_id}}==";
+			var bilibili_src = "//player.bilibili.com/player.html?aid={{ page.b_av }}&cid={{ page.b_cid }}&page={{ page.b_page }}";
+			// var bilibili_src = "//static.hdslb.com/miniloader.swf?aid={{page.b_av}}";
+
+    	getEmbeddedVideo(bilibili_src, "{{page.b_av}}/?p={{page.b_page}}", youtube_src, "{{page.youtube_id}}", youku_src, "{{page.youku_id}}");
+		</script>
+	</div>
+
+	<div class="switch-video-div">
+		<span style="font-weight: bold;vertical-align: super;" >切换视频源：</span>
+		{% if page.youtube_id %}
+		<button class="switch-video-btn" onclick="chooseVideo(youtube_src, 'youtube', '{{page.youtube_id}}')">
+			<img class="icon" src="/static/img/icon/youtube.png" alt="Youtube频道">
+		</button>
+		{% endif %}
+
+		{% if page.youku_id %}
+		<button class="switch-video-btn" onclick="chooseVideo(youku_src, 'youku', '{{page.youku_id}}')">
+			<img class="icon" src="/static/img/icon/youku.jpg" alt="优酷频道">
+		</button>
+		{% endif %}
+
+		{% if page.b_av %}
+		<button class="switch-video-btn" onclick="chooseVideo(bilibili_src, 'bilibili', '{{page.b_av}}/?p={{page.b_page}}')">
+	    	<img class="icon" src="/static/img/icon/bilibili_icon.png" alt="Bilibili">
+	    </button>
+		{% endif %}
+
+		<p id="video-alrt-info" style="display: none; font-size: 0.8em; text-align: center;"></p>
+		<hr style="width: 60%;">
+
+
+	</div>
+
+
+	{% else %}
+		<br><br>
+		<span style="color:#F56100;font-size: 2.5em;text-align: center;padding: 0.1em 0.2em;display: block;">
+			此节内容视频还在录制中, 敬请期待~</span>
+		<br><br>
+	{% endif %}
+
+{% endif %}
+

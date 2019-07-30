@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% seo %}
+	{% feed_meta %}
+	<link href="{{site.baseurl}}/stylesheets/page-style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet"
+		href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+	<script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/js/qq-video.js"></script>
+	<script type="text/javascript">
+		/* check-flash.js */
+		var FlashDetect=new function(){var self=this;self.installed=false;self.raw="";self.major=-1;self.minor=-1;self.revision=-1;self.revisionStr="";var activeXDetectRules=[{"name":"ShockwaveFlash.ShockwaveFlash.7","version":function(obj){return getActiveXVersion(obj);}},{"name":"ShockwaveFlash.ShockwaveFlash.6","version":function(obj){var version="6,0,21";try{obj.AllowScriptAccess="always";version=getActiveXVersion(obj);}catch(err){}
+		return version;}},{"name":"ShockwaveFlash.ShockwaveFlash","version":function(obj){return getActiveXVersion(obj);}}];var getActiveXVersion=function(activeXObj){var version=-1;try{version=activeXObj.GetVariable("$version");}catch(err){}
+		return version;};var getActiveXObject=function(name){var obj=-1;try{obj=new ActiveXObject(name);}catch(err){obj={activeXError:true};}
+		return obj;};var parseActiveXVersion=function(str){var versionArray=str.split(",");return{"raw":str,"major":parseInt(versionArray[0].split(" ")[1],10),"minor":parseInt(versionArray[1],10),"revision":parseInt(versionArray[2],10),"revisionStr":versionArray[2]};};var parseStandardVersion=function(str){var descParts=str.split(/ +/);var majorMinor=descParts[2].split(/\./);var revisionStr=descParts[3];return{"raw":str,"major":parseInt(majorMinor[0],10),"minor":parseInt(majorMinor[1],10),"revisionStr":revisionStr,"revision":parseRevisionStrToInt(revisionStr)};};var parseRevisionStrToInt=function(str){return parseInt(str.replace(/[a-zA-Z]/g,""),10)||self.revision;};self.majorAtLeast=function(version){return self.major>=version;};self.minorAtLeast=function(version){return self.minor>=version;};self.revisionAtLeast=function(version){return self.revision>=version;};self.versionAtLeast=function(major){var properties=[self.major,self.minor,self.revision];var len=Math.min(properties.length,arguments.length);for(i=0;i<len;i++){if(properties[i]>=arguments[i]){if(i+1<len&&properties[i]==arguments[i]){continue;}else{return true;}}else{return false;}}};self.FlashDetect=function(){if(navigator.plugins&&navigator.plugins.length>0){var type='application/x-shockwave-flash';var mimeTypes=navigator.mimeTypes;if(mimeTypes&&mimeTypes[type]&&mimeTypes[type].enabledPlugin&&mimeTypes[type].enabledPlugin.description){var version=mimeTypes[type].enabledPlugin.description;var versionObj=parseStandardVersion(version);self.raw=versionObj.raw;self.major=versionObj.major;self.minor=versionObj.minor;self.revisionStr=versionObj.revisionStr;self.revision=versionObj.revision;self.installed=true;}}else if(navigator.appVersion.indexOf("Mac")==-1&&window.execScript){var version=-1;for(var i=0;i<activeXDetectRules.length&&version==-1;i++){var obj=getActiveXObject(activeXDetectRules[i].name);if(!obj.activeXError){self.installed=true;version=activeXDetectRules[i].version(obj);if(version!=-1){var versionObj=parseActiveXVersion(version);self.raw=versionObj.raw;self.major=versionObj.major;self.minor=versionObj.minor;self.revision=versionObj.revision;self.revisionStr=versionObj.revisionStr;}}}}}();};FlashDetect.JS_RELEASE="1.0.4";
+	  </script>
+	<script type="text/javascript" src="//pv.sohu.com/cityjson"></script>
+	<script type="text/javascript" src="/js/video-select.js"></script>
+	{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+	<script>
+		window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+		ga('create', '{{ site.google_analytics_key }}', 'auto');
+		ga('send', 'pageview');
+		
+	</script>
+	
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	{% endif %}
+</head>
+
+<body>
+	<header>
+		<h1>
+			<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/rex.png" width="60" height="60"
+					alt="{{ site.title }} logo" style="margin-top: 20px;margin-right: 10px;margin-left: 10px"></a>
+			<div>
+				<div class='r-title'>Rex</div>
+				<div class="r-job">engineer</div>
+				<div>
+					<footer>
+						<ul>
+							<li><a href="https://www.youtube.com/channel/UC3mjPUoQe_WS4_biXjlw3iA" target="_blank">
+									<img class="icon" src="{{ site.baseurl }}/static/img/icon/youtube.png" alt="Youtube频道"></a></li>
+							<li><a href="http://v.qq.com/vplus/aead3a83e4ec0caef9bb462829b154a5" target="_blank">
+									<img class="icon" src="{{ site.baseurl }}/static/img/icon/timg.png" alt="腾讯视频"></a></li>
+							<li><a href="https://github.com/Rex1168" target="_blank">
+									<img class="icon" src="{{ site.baseurl }}/static/img/icon/github.png" alt="Github"></a></li>
+							<li><a href="https://www.zhihu.com/people/fen-nu-de-xiong-mao-30-82/activities" target="_blank">
+									<img class="icon" src="{{ site.baseurl }}/static/img/icon/zhihu.png" alt="知乎"></a></li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+			<button type="button" class="open-nav" id="open-nav"></button>
+		</h1>
+		<form action="{{ site.baseurl }}/search/" method="get">
+			<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+			<input type="submit" value="Search" style="display: none;">
+		</form>
+
+		<nav {% if site.show_full_navigation %}class="full-navigation" {% endif %}>
+			<ul>
+				<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
+					{% assign home = site.html_pages | where: 'url', '/' | first %}
+					<a href="{{ site.baseurl }}/">About me</a>
+				</li>
+				<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
+					{% assign home = site.html_pages | where: 'url', '/' | first %}
+					<a href="{{ site.baseurl }}/recent-posts-4/">最近更新</a>
+				</li>
+			</ul>
+
+			<ul>
+				{% assign grouped = site.docs | group_by: 'category' %}
+				{% for group in grouped %}
+				<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+					{% assign items = group.items | sort: 'order' %}
+					<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+					<ul>
+						{% for item in items %}
+						<li class="nav-item {% if item.url == page.url %}current{% endif %}">
+							<a href="{{ site.baseurl }}{{ item.url }}">
+								{{ item.title }}
+							</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</header>
+
+	<section class="main">
+		<div class="page-header">
+			<!-- <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2> -->
+			<h2>{{ page.title }}</h2>
+		</div>
+		<article class="content">
+			{{ content }}
+		</article>
+	</section>
+
+	<script>
+		document.getElementById("open-nav").addEventListener("click", function () {
+			document.body.classList.toggle("nav-open");
+		});
+	</script>
+</body>
+
+</html>

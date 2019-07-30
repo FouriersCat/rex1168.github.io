@@ -1,1 +1,152 @@
-theme: jekyll-theme-time-machine
+# ----
+# Site
+
+title: technomania技术狂
+url: "https://hekia.github.io/"
+baseurl:
+google_analytics: UA-144753513-1
+baidu-analytics: 851aeb9decf4ee151b1a2ecb86999995
+show_full_navigation: true
+markdown: kramdown
+encoding: UTF-8
+minify_html: false
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: 技术狂
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Edition Template0
+  links:
+    - https://github.com/hekia/
+
+# -----
+# Build
+
+# timezone: Etc/UTC
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  docs:
+    title: Documentation
+    output: true
+  front-pages:
+    output: true
+  modules-intro:
+    output: true
+  loop-description:
+    output: false
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
+  table-contents:
+    output: true
+    permalink: /tutorials/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release
+  - 
+    scope:
+      path: "_front-pages"
+    values:
+      layout: front-page
+      enable_ads: true
+  - 
+    scope:
+      path: "_modules-intro"
+    values:
+      layout: front-page
+
+  - scope:
+      path: "_table-contents"
+    values:
+      layout: table-of-contents
+
+  - 
+    scope:
+      path: "_tutorials"
+    values:
+      layout: tutorial-post
+      editor: Rex
+      author: Rex
+      author-link: "#"
+      enable_ads: false
+      published: true  #TOD: change back to true
+
+  # module descriptions
+  - 
+    scope:
+      path: "_loop-description/python-basic"
+    values:
+      module: python-basic
+  - 
+    scope:
+      path: "_loop-description/home"
+    values:
+      module: home
+  - scope:
+      path: "_loop-description/data-manipulation"
+    values:
+      module: data-manipulation
+  - scope:
+      path: "_loop-description/machine-learning"
+    values:
+      module: machine-learning
+  - scope:
+      path: "_loop-description/others"
+    values:
+      module: others
+  - scope:
+      path: "_loop-description/julia"
+    values:
+      module: julia
+
+  # tutorial default
+  - scope:
+      path: "_tutorials/julia/julia-base"
+    values:
+      series: 科学计算语言--Julia
+      tut-permalink: /tutorials/julia/julia-base/
+      category: base
+      keywords: Julia, 科学计算
+      thumbnail: /static/img/course_cover/julia-base.png
+  

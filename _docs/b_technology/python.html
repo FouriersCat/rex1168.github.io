@@ -1,0 +1,37 @@
+---
+title: Python
+category: 爱技术
+order: 1
+icon-dir: /static/img/icon/python_icon.png
+tut-dir: /tutorials/python/
+description: python.
+tut-course-detail:
+- ["/tutorials/python/python-data-proc", "python数据处理", "/static/img/course_cover-small/python-data-proc.png"]
+- ["/tutorials/python/python-parallel-computer", "python并行计算", "/static/img/course_cover-small/python.png"]
+---
+
+<div class="section ie-size">
+  <div class="pad-main">
+
+
+<ul class="tut-course-thumbnail">
+  {% for item in page.tut-course-detail %}
+  <li><a href="{{ item[0] }}/">
+      <img class="lazy-img" alt="{{ item[1] }}" src="{{ item[2] }}" 
+        title='{{ item[1] }}'>
+    </a></li>
+  {% endfor %}
+</ul>
+<br>
+
+<!-- <p>
+  {{ description.excerpt }}
+</p> -->
+
+
+
+<p style="font-size: 1.0em;">
+<strong>内容待补充。。。。。</strong>
+</p>
+</div>
+</div>

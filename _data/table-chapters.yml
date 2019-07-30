@@ -1,0 +1,52 @@
+julia-base:
+  chapter-names:
+    - Julia简介及安装
+    - Julia REPL 变量
+    - 数学运算 矩阵操作
+    - 函数方法 多重分派
+    - 控制
+    - 类型
+    - 绘图
+    - IO操作
+    - 模块
+    - 元编程
+    - 并行计算
+    - 科学计算
+    - 如何写出高性能Julia
+
+julia-distributed-computing:
+  chapter-names:
+    - ch1
+
+gpu-distributed-computing:
+  chapter-names:
+    - ch1
+
+optimize:
+  chapter-names:
+    - ch1
+gpu-parallel-computer:
+  chapter-names:
+    - ch1
+advance:
+  chapter-names:
+    - ch1
+base:
+  chapter-names:
+    - ch1
+HLS:
+  chapter-names:
+    - ch1
+timing-analysis:
+  chapter-names:
+    - ch1
+python-parallel-computer:
+  chapter-names:
+    - ch1
+wxPython:
+  chapter-names:
+    - ch1
+python-data-proc:
+  chapter-names:
+    - python数据处理
+

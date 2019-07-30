@@ -1,0 +1,178 @@
+---
+layout: default
+structured-type: BlogPosting
+---
+
+<main class="tut-main">
+
+  <div class="tut-post-main">
+    <!-- top a-d-s google -->
+    <!-- <div class="section ie-size" id="top-a-d-s">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="6002797349"
+           data-ad-format="auto">
+      </ins> 
+      <script>
+        window.addEventListener('load', function(){
+          (function(d, s) {
+
+            (adsbygoogle = window.adsbygoogle || []).push({});
+
+          })(document, 'script');
+        }, false)
+      </script>
+    </div> -->
+
+    <!-- video section -->
+    <div class="section ie-size">
+      <!-- video section -->
+      {% include embedded-video.html %}
+
+      <!-- upper page navigation -->
+      <div class="pad-page-navigation">
+        {% include prev-next-post.html %}
+      </div>
+    </div>
+
+    <!-- post main content -->
+    <div class="section ie-size">
+
+      <!-- main content -->
+      <div class="tut-main-content-pad">
+        <br>
+        <!-- <h1>{{page.title}}</h1>
+        <div style="text-align: center;">
+          作者:
+          <span class="author" >
+          {% if page.author-link != "#" %}
+            <a href="{{page.author-link}}" target="_blank">{{page.author}}</a>
+          {% else %}
+            {{page.author}}
+          {% endif %}
+          </span>
+          编辑:
+          <span class="editor">
+            {{page.editor}}
+          </span>
+          <span class="publish-date">
+          {% if page.publish-date %}
+            {{page.publish-date}}
+          {% else %}
+            2016-11-03
+          {% endif %}
+          </span>
+
+        </div> -->
+
+        {% if page.enable_ads %}
+        <!-- under title a-d-s -->
+        <div id="under-title-a-d-s">
+          <!-- under-title -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:250px;height:250px"
+               data-ad-client="ca-pub-4601203457616636"
+               data-ad-slot="2975922481"></ins>
+          <script>
+            window.addEventListener('load', function(){
+              (function(d, s) {
+
+                (adsbygoogle = window.adsbygoogle || []).push({});
+
+              })(document, 'script');
+            }, false)
+          </script>
+        </div>
+
+        {% endif %}
+
+        {{content}}
+
+
+        <!-- donation -->
+        <div id="bottom-donation-section">
+          <!-- include share-donate.html  -->
+        </div>
+
+        <hr>
+      </div>
+
+      <!-- lower page navigation -->
+      <div class="pad-page-navigation">
+        {% include prev-next-post.html %}
+      </div>
+    </div>
+
+    <!-- comment a-d-s section -->
+   <div class="section ie-size">
+      <!-- comment a-d-s -->
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="3952173485">
+          </ins> 
+     <script>
+        window.addEventListener('load', function(){
+          (function(d, s) {
+
+            (adsbygoogle = window.adsbygoogle || []).push({});
+
+          })(document, 'script');
+        }, false)
+      </script> 
+    </div> 
+
+    <!-- comment section -->
+    <div class="section ie-size">
+       {% include comment-section.html %}
+    </div>
+
+    <!-- menu button -->
+    <div class="tut-content-menu">
+      <a class="hover-move" href="{{ site.baseurl }}{{ page.tut-permalink }}">
+      <img src="/static/img/icon/tutorial_contents_icon.jpg" alt="教程目录"></a>
+    </div>
+  </div>
+
+  <!-- right side section -->
+  <div class="tut-right-bar">
+    <!-- table-content-nav side section -->
+    <div class="tut-table-content-nav section">
+      <a href="{{ page.tut-permalink }}"><p><strong>{{ page.series }}</strong></p></a>
+      {% assign items = site.tutorials | where: "category", page.category | sort  %}
+      {% assign tut-chapters = site.data.table-chapters[page.category] %}
+
+      {% for chapter-name in tut-chapters.chapter-names %}
+		  {% assign i = forloop.index %}
+      <ul class="tut-table-content-nav-contents">
+        {% assign chapter-items = items | where: "chapter", i | sort: "index" %}
+        <p style="text-align: right; padding:0; margin:0; color: white; font-size:1.1em; background-color: #44a371;">{{ chapter-name }}</p>
+        {% for item in chapter-items %}
+          <li class="tut-table-content-nav-li">
+            {% if item.title == page.title %}
+            <a href="{{item.url}}" style="color:#ffffff;">{{ item.title }}</a>
+               {% if page.post-headings %}
+                <ul style="padding-left: 1em;">
+                  {% for heading in page.post-headings %}
+                  {% assign hid = heading | replace: " ", "-" %}
+                    <li><a href="{{ page.url }}#{{ hid }}" style="color:#ffffff;">{{ heading }}</a> </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% else %}
+            <a href="{{item.url}}">{{ item.title }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+
+  </div>
+</main>
+
+
+

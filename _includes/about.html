@@ -1,0 +1,94 @@
+---
+title: "About me"
+youtube_id: 
+youku_id: 
+b_av: 
+permalink: /about/
+thumbnail: 
+items:
+  - [text, Email, "zhj02091168@foxmail.com"]
+  - [link, Youtube, "https://www.youtube.com/channel/UC3mjPUoQe_WS4_biXjlw3iA"]
+  - [link, 腾讯视频, "http://v.qq.com/vplus/aead3a83e4ec0caef9bb462829b154a5"]
+  - [link, 知乎, "https://www.zhihu.com/people/fen-nu-de-xiong-mao-30-82/activities"]
+  - [link, github, "https://github.com/Rex1168"]
+  - [link, csdn, "https://blog.csdn.net/zhanghaijun2013"]
+reference:
+  - https://github.com/CloudCannon/edition-jekyll-template
+  - https://github.com/MorvanZhou/morvanzhou.github.io
+description: 
+---
+
+<h1 style="display:none; padding:0; margin:0;">{{page.title}}</h1>
+<div class="section ie-size">
+	<div class="pad-main">
+		<p>
+			我叫张海军，2016年从西安电子科技大学毕业后，在中国科学院为祖国的航天（卫星）事业奋斗，现在在一家创业型公司，依然做着信号处理算法相关的工作。在这里我会分享一些自己整理的东西，听书、看文章、学技术，有兴趣的朋友可以收藏一下。
+		</p>
+		<br>
+		<h2 class="small-h1">
+			我的背景资料 (My Background)
+		</h2>
+		<table class="my-background-table">
+			<colgroup>
+				<col width="15%" />
+				<col width="35%" />
+				<col width="50%" />
+			</colgroup>
+			<tbody>
+				
+				<tr>
+					<td>2009~2013</td>
+					<td>本科, 电子信息工程</td>
+					<td>西安电子科技大学</td>
+				</tr>
+				<tr>
+					<td>2009~2013</td>
+					<td>硕士, 信号与信息处理</td>
+					<td>西安电子科技大学</td>
+				</tr>
+				
+				
+			</tbody>
+		</table>
+
+		<br>
+
+		<h2 class="small-h1">
+			Contact Me
+		</h2>
+		<p>
+		    下面是几种我常用平台:
+		</p>
+		<div id="contact-table" style="font-size:0.9em;">
+			{% for item in page.items %}
+				<div class="row">
+				  <p style="color: #028e3d;">{{ item[1] }}:</p>
+					{% if item[0] == "link" %}
+				    <a href="{{ item[2] }}" style="font-size:0.7em;" target="_blank">
+					    {{ item[2] }}
+				    </a>
+					{% elsif item[0] == "text" %}
+					  <span style="text-decoration:none; color:#00b359;" >
+					    {{ item[2] }}
+				    </span>
+					{% endif %}
+				</div>
+			{% endfor %}
+
+		</div>
+		<br />
+		<br />
+		<p>
+		    由于本人并非做前端出身，也不能独立写出一个完整的GitHub Pages主页，因此也只能参考GitHub上现有的代码，这个主页主要参考了的两个GitHub pages是下面两个：
+		    {% for ref in page.reference %}
+				<div class="row">
+				  <p style="color: #211e1e;"></p>
+				    <a href="{{ ref }}" style="font-size:0.8em;" target="_blank">
+					    {{ ref }}
+				    </a>
+				</div>
+			{% endfor %}
+		    
+		</p>
+	</div>
+</div>
