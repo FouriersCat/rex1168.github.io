@@ -42,7 +42,10 @@ timing-analysis:
     - ch1
 python-parallel-computer:
   chapter-names:
-    - ch1
+    - Python并行计算
+python-basic:
+  chapter-names:
+    - Python基础教程
 wxPython:
   chapter-names:
     - ch1
