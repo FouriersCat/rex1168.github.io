@@ -40,15 +40,12 @@ HLS:
 timing-analysis:
   chapter-names:
     - ch1
-python-parallel-computer:
+python-parallel-computing:
   chapter-names:
     - Python并行计算
 python-basic:
   chapter-names:
     - Python基础教程
-wxPython:
-  chapter-names:
-    - ch1
 python-data-proc:
   chapter-names:
     - python数据处理
