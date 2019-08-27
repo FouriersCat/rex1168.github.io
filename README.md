@@ -1,66 +1,38 @@
-# Edition
+# Rex1168
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+This is a free learning page, including programming language, algorithm and audio books.
+The website is [www.technomania.cn](http://www.technomania.cn/)
 
-![Edition template screenshot](images/_screenshot.png)
+<center>
+<img src="https://github.com/Bounce00/pic/blob/master/git/githubpages.png?raw=true" width = "1459" height = "600" alt="" />
+ 
+</center>
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+Programming languages includes:
+ - Python
+ - Matlab
+ - Julia
+ - FPGA
+ - C\C++
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+Algorithm includes:
+ - Signal processing
+ - Machine learning
+ - Deep learning
 
-## Features
+Audio books includes:
+ - History
+ - Invesement
+ - Marketing
+ - Outlook
 
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+Some content is still in the process of improvement
 
-## Setup
+You can leave a message at the bottom of each article.
+<center>
+<img src="https://github.com/Bounce00/pic/blob/master/git/bottommessage.png?raw=true" width = "900" height = "500" alt="" />
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+</center>
 
-## Develop
+Enjoy learning！
 
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
-~~~bash
-$ bundle install
-~~~
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Documentation pages
-
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
