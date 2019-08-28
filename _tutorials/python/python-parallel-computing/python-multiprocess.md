@@ -12,7 +12,7 @@ post-headings:
 author-link: #
 no-video: true
 publish-date: 2019-08-26
-thumbnail: /static/img/course_cover-small/python.png
+thumbnail: /static/img/course_cover-small/python-parallel.png
 index: 2
 ---
 
