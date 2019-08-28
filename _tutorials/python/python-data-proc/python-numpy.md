@@ -11,7 +11,7 @@ category: python-data-proc
 post-headings:
 author-link: #
 no-video: true
-publish-date: 2019-07-08
+publish-date: 2019-08-26
 thumbnail: /static/img/course_cover-small/python-data-proc.png
 index: 1
 ---

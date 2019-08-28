@@ -11,7 +11,7 @@ category: python-parallel-computing
 post-headings:
 author-link: #
 no-video: true
-publish-date: 2019-08-26
+publish-date: 2019-08-25
 thumbnail: /static/img/course_cover-small/python-parallel.png
 index: 2
 ---

@@ -11,7 +11,7 @@ category: julia-base
 post-headings:
 author-link: #
 no-video: false
-publish-date: 2019-07-08
+publish-date: 2019-08-26
 thumbnail: /static/img/course_cover-small/julia-base.png
 index: 1
 ---

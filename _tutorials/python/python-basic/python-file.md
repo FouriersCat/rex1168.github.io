@@ -11,7 +11,7 @@ category: python-basic
 post-headings:
 author-link: #
 no-video: true
-publish-date: 2019-08-26
+publish-date: 2019-08-25
 thumbnail: /static/img/course_cover-small/python.png
 index: 5
 ---
