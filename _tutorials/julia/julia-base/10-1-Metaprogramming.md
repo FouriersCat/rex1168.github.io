@@ -1,9 +1,9 @@
 ---
 youtube_id: C7pLgXYNVFI
 qq_video_id: f0833ch8s80
-b_av: 47775635
-b_cid: 83684894
-b_page: 24
+b_av: 61523729
+b_cid: 106541162
+b_page: 1
 title: Julia元编程
 description: "什么是元编程？Julia中怎么使用元编程？"
 chapter: 10

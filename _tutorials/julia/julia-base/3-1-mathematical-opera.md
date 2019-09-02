@@ -1,9 +1,9 @@
 ---
 youtube_id: EnueGYn3gNE
 qq_video_id: f0831jwgmwh
-b_av: 47775635
-b_cid: 83682577
-b_page: 9
+b_av: 61523729
+b_cid: 106811549
+b_page: 33
 title: Julia数学运算
 description: "都说Julia有比Matlab更直观的数学表达式，到底有多直观呢？"
 chapter: 3

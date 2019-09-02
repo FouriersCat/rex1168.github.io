@@ -1,9 +1,9 @@
 ---
 youtube_id: ZlcciangAjE
 qq_video_id: w08338wu12s
-b_av: 47775635
-b_cid: 83682872
-b_page: 15
+b_av: 61523729
+b_cid: 106899689
+b_page: 39
 title: Julia异常处理
 description: "Julia中碰到异常怎么办？"
 chapter: 5

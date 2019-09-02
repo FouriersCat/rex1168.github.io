@@ -1,9 +1,9 @@
 ---
 youtube_id: 1vDfBfak7WA
 qq_video_id: y0833d2qbwh
-b_av: 47775635
-b_cid: 83682886
-b_page: 16
+b_av: 61523729
+b_cid: 106907120
+b_page: 40
 title: Julia任务
 description: "Julia中的协程介绍"
 chapter: 5

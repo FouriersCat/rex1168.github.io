@@ -1,9 +1,9 @@
 ---
 youtube_id: _CLn7nElako
 qq_video_id: a0830ae0lyc
-b_av: 47775635
-b_cid: 83682507
-b_page: 8
+b_av: 61523729
+b_cid: 106787955
+b_page: 32
 title: Tuple Dict Set
 description: "Python中有的数据类型，Julia中也有"
 chapter: 2

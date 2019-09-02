@@ -1,9 +1,9 @@
 ---
 youtube_id: Q_RrW9NNR4E
 qq_video_id: u0833hdonur
-b_av: 47775635
-b_cid: 83686868
-b_page: 40
+b_av: 61523729
+b_cid: 106699196
+b_page: 17
 title: 避免全局变量
 description: "避免全局变量"
 chapter: 13

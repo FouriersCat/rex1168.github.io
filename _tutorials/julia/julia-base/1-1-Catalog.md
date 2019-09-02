@@ -1,9 +1,9 @@
 ---
 youtube_id: IooqqjQ2nOI
 qq_video_id: z0830ofv97a
-b_av: 47775635 
-b_cid: 83681145
-b_page: 1
+b_av: 61523729 
+b_cid: 106747548
+b_page: 25
 title: Julia教程目录
 description: "Julia是一门越来越火的编程语言，我们这个教程的目的就是带大家了解Julia，也希望大家能喜欢Julia。这个系列的Julia教程总共有47个视频，从Julia的简介到语法再到Julia中的应用。"
 chapter: 1

@@ -1,9 +1,9 @@
 ---
 youtube_id: lNc1YHboo3M
 qq_video_id: p0833do6jpc
-b_av: 47775635
-b_cid: 83683146
-b_page: 18
+b_av: 61523729
+b_cid: 106937703
+b_page: 42
 title: 复合类型 可变复合类型 DataType TypeUnion
 description: "复合类型 可变复合类型 DataType TypeUnion"
 chapter: 6

@@ -1,9 +1,9 @@
 ---
 youtube_id: M1FCzIEJc-8
 qq_video_id: s08331fzpvr
-b_av: 47775635
-b_cid: 83685829
-b_page: 30
+b_av: 61523729
+b_cid: 106617335
+b_page: 7
 title: Julia科学计算之DataFrames
 description: "在Julia中也有DataFrame，用法跟Python中有些类似"
 chapter: 12

@@ -1,9 +1,9 @@
 ---
 youtube_id: dnXxfaTdZeM
 qq_video_id: n0833p1uv9y
-b_av: 47775635
-b_cid: 83687394
-b_page: 44
+b_av: 61523729
+b_cid: 106734274
+b_page: 21
 title: 避免拥有抽象类型参数的容器
 description: "避免拥有抽象类型参数的容器"
 chapter: 13

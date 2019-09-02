@@ -1,9 +1,9 @@
 ---
 youtube_id: D_PU33GA8b0
 qq_video_id: e0830aj1p6j
-b_av: 47775635
-b_cid: 83681918
-b_page: 7
+b_av: 61523729
+b_cid: 106770759
+b_page: 31
 title: Julia字符串
 description: "字符串！！又见蛋疼的编码"
 chapter: 2

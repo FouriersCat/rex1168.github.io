@@ -1,9 +1,9 @@
 ---
 youtube_id: giZUQPvN45U
 qq_video_id: k0833xz4ijj
-b_av: 47775635
-b_cid: 83687340
-b_page: 42
+b_av: 61523729
+b_cid: 106721642
+b_page: 19
 title: 抽象类型 具体类型
 description: "抽象类型 具体类型"
 chapter: 13

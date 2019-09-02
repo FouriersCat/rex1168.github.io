@@ -1,9 +1,9 @@
 ---
 youtube_id: peHsa2kD6-E
 qq_video_id: t0833rht5ar
-b_av: 47775635
-b_cid: 83685778
-b_page: 29
+b_av: 61523729
+b_cid: 106600483
+b_page: 6
 title: Julia多进程
 description: "多进程"
 chapter: 11

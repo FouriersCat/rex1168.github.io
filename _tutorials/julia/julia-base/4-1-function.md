@@ -1,9 +1,9 @@
 ---
 youtube_id: WGWdMz6B5Ro
 qq_video_id: k08310x7k6g
-b_av: 47775635
-b_cid: 83682724
-b_page: 11
+b_av: 61523729
+b_cid: 106851605
+b_page: 35
 title: Julia函数
 description: "函数的各种用法"
 chapter: 4

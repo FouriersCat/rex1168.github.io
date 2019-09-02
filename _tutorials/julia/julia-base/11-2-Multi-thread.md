@@ -1,9 +1,9 @@
 ---
 youtube_id: -5WEslpX_WU
 qq_video_id: x08330glmhc
-b_av: 47775635
-b_cid: 83685424
-b_page: 28
+b_av: 61523729
+b_cid: 106583672
+b_page: 5
 title: Julia多线程
 description: "多线程"
 chapter: 11

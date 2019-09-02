@@ -1,9 +1,9 @@
 ---
 youtube_id: 5JnOywkU9EI
 qq_video_id: o0833lvt2o7
-b_av: 47775635
-b_cid: 83685887
-b_page: 30
+b_av: 61523729
+b_cid: 106630648
+b_page: 8
 title: Julia科学计算之RdataSets
 description: "最常用的科学计算数据包：RdataSets以及科学计算绘图工具Gadfly"
 chapter: 12

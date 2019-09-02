@@ -1,9 +1,9 @@
 ---
 youtube_id: n3j7dHFUZdI
 qq_video_id: v0833baqkm3
-b_av: 47775635
-b_cid: 83686495
-b_page: 36
+b_av: 61523729
+b_cid: 106667882
+b_page: 13
 title: Julia机器学习之MultivariateStats
 description: "Julia机器学习之MultivariateStats"
 chapter: 12

@@ -1,9 +1,9 @@
 ---
 youtube_id: Gg494WbMgYw
 qq_video_id: i0833monio6
-b_av: 47775635
-b_cid: 83684494
-b_page: 21
+b_av: 61523729
+b_cid: 106988138
+b_page: 45
 title: Julia文件读写
 description: "Julia文件读写"
 chapter: 8

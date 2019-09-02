@@ -1,9 +1,9 @@
 ---
 youtube_id: OfLqzeBRFl4
 qq_video_id: c0833we3eje
-b_av: 47775635
-b_cid: 83683943
-b_page: 20
+b_av: 61523729
+b_cid: 106979830
+b_page: 44
 title: Julia绘图工具
 description: "Julia中4种常用的绘图工具"
 chapter: 7

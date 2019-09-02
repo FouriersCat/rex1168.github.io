@@ -1,9 +1,9 @@
 ---
 youtube_id: H14rsP644mM
 qq_video_id: z0831eiuwgn
-b_av: 47775635
-b_cid: 83682816
-b_page: 13
+b_av: 61523729
+b_cid: 106882188
+b_page: 37
 title: Julia多重分派
 description: "什么是多重分派？如何在Julia中使用单分派"
 chapter: 4

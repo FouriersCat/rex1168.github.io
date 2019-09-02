@@ -1,9 +1,9 @@
 ---
 youtube_id: s0F9Vk2AJr4
 qq_video_id: q0833eew21b
-b_av: 47775635
-b_cid: 83684809
-b_page: 23
+b_av: 61523729
+b_cid: 106993362
+b_page: 47
 title: Julia模块
 description: "模块相当于Python中的库，那应该怎么导入模块，怎么自定义模块？"
 chapter: 9

@@ -1,9 +1,9 @@
 ---
 youtube_id: h3bgf9cDKQM
 qq_video_id: q0830rmv5cl
-b_av: 47775635
-b_cid: 83681630
-b_page: 6
+b_av: 61523729
+b_cid: 106765486
+b_page: 30
 title: 复数 分数
 description: "Julia中的复数和分数"
 chapter: 2

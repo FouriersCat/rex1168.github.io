@@ -1,9 +1,9 @@
 ---
 youtube_id: Eq59qfI_5Ns
 qq_video_id: d08308c3q2m
-b_av: 47775635
-b_cid: 83681302
-b_page: 4
+b_av: 61523729
+b_cid: 106752558
+b_page: 28
 title: Julia的REPL的使用
 description: "REPL的有几种工作模式？Julia中怎么安装或删除Package?"
 chapter: 2

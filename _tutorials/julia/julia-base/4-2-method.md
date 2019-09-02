@@ -1,9 +1,9 @@
 ---
 youtube_id: 1YUtLYU9Pjk
 qq_video_id: h083124n6l0
-b_av: 47775635
-b_cid: 83682792
-b_page: 12
+b_av: 61523729
+b_cid: 106872795
+b_page: 36
 title: Julia方法
 description: "方法和函数的区别？具体如何应用？"
 chapter: 4

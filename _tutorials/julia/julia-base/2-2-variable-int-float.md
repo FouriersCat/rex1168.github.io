@@ -1,9 +1,9 @@
 ---
 youtube_id: dtwUyIPNFYA
 qq_video_id: w0830uddxrt
-b_av: 47775635
-b_cid: 83681519
-b_page: 5
+b_av: 61523729
+b_cid: 106754367
+b_page: 29
 title: 变量 整型 浮点
 description: "Julia中最常用的数据类型"
 chapter: 2

@@ -1,9 +1,9 @@
 ---
 youtube_id: 1s03xE-pBq4
 qq_video_id: w0833l17oku
-b_av: 47775635
-b_cid: 83686249
-b_page: 34
+b_av: 61523729
+b_cid: 106651342
+b_page: 11
 title: Julia机器学习之MLBase
 description: "Julia机器学习之MLBase"
 chapter: 12

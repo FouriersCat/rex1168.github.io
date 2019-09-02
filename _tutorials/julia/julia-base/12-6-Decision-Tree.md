@@ -1,9 +1,9 @@
 ---
 youtube_id: OpxExN_Ldk0
 qq_video_id: k083331qiqj
-b_av: 47775635
-b_cid: 83686429
-b_page: 35
+b_av: 61523729
+b_cid: 106654483
+b_page: 12
 title: Julia机器学习之决策树
 description: "Julia机器学习之决策树"
 chapter: 12

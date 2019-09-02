@@ -1,9 +1,9 @@
 ---
 youtube_id: H7JLJcoMJeg
 qq_video_id: g0833mcpr6e
-b_av: 47775635
-b_cid: 83686848
-b_page: 39
+b_av: 61523729
+b_cid: 106692338
+b_page: 16
 title: Julia机器学习之Kmeans
 description: "Julia机器学习之Kmeans"
 chapter: 12

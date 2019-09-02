@@ -1,9 +1,9 @@
 ---
 youtube_id: LKSxXcYa9O8
 qq_video_id: a0833c5qtfk
-b_av: 47775635
-b_cid: 83684955
-b_page: 25
+b_av: 61523729
+b_cid: 106555472
+b_page: 2
 title: Julia宏调用
 description: "宏这个概念在其他语言中都存在，在Julia中宏应该怎么用呢？"
 chapter: 10

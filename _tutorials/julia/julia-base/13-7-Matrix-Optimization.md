@@ -1,9 +1,9 @@
 ---
 youtube_id: DMrKXKMb1qY
 qq_video_id: c083306xpdw
-b_av: 47775635
-b_cid: 83687594
-b_page: 46
+b_av: 61523729
+b_cid: 106742423
+b_page: 23
 title: 矩阵运算优化
 description: "矩阵运算优化"
 chapter: 13

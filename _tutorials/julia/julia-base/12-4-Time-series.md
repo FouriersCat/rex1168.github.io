@@ -1,9 +1,9 @@
 ---
 youtube_id: nLp7KxsfzOs
 qq_video_id: v08338zxp5a
-b_av: 47775635
-b_cid: 83686142
-b_page: 33
+b_av: 61523729
+b_cid: 106647627
+b_page: 10
 title: Julia科学计算之时间序列
 description: "Julia中的时间序列"
 chapter: 12

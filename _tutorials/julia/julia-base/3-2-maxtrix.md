@@ -1,9 +1,9 @@
 ---
 youtube_id: EnueGYn3gNE
 qq_video_id: f0831jwgmwh
-b_av: 47775635
-b_cid: 83682577
-b_page: 10
+b_av: 61523729
+b_cid: 106826598
+b_page: 34
 title: Julia矩阵
 description: "Julia中矩阵的基本操作"
 chapter: 3

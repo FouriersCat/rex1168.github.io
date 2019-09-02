@@ -1,9 +1,9 @@
 ---
 youtube_id: kIXXqbZ-r2A
 qq_video_id: b0833h107a9
-b_av: 47775635
-b_cid: 83686543
-b_page: 38
+b_av: 61523729
+b_cid: 106679083
+b_page: 15
 title: Julia机器学习之线性回归
 description: "Julia机器学习之线性回归"
 chapter: 12

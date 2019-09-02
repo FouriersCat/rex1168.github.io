@@ -1,9 +1,9 @@
 ---
 youtube_id: y9jbF9whZJE
 qq_video_id: r08307w41sw
-b_av: 47775635
-b_cid: 83681145
-b_page: 3
+b_av: 61523729
+b_cid: 106750356
+b_page: 27
 title: Julia的安装
 description: "3种方式安装使用Julia"
 chapter: 1

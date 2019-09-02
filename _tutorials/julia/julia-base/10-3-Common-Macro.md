@@ -1,9 +1,9 @@
 ---
 youtube_id: 6DBUHOjOmKo
 qq_video_id: r0833jjrny2
-b_av: 47775635
-b_cid: 83684981
-b_page: 26
+b_av: 61523729
+b_cid: 106560000
+b_page: 3
 title: Julia中常用的宏
 description: "Julia中常用的宏"
 chapter: 10

@@ -1,9 +1,9 @@
 ---
 youtube_id: y9jbF9whZJE
 qq_video_id: r08307w41sw
-b_av: 47775635
-b_cid: 83681145
-b_page: 2
+b_av: 61523729
+b_cid: 106748833
+b_page: 26
 title: Julia简介
 description: "Julia是在什么样的环境下诞生的？Julia的应用场景都有哪些？"
 chapter: 1

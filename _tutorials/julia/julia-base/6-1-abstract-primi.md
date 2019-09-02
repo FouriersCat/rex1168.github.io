@@ -1,9 +1,9 @@
 ---
 youtube_id: D125TQ_Zpnc
 qq_video_id: v0833ammsoc
-b_av: 47775635
-b_cid: 83683077
-b_page: 17
+b_av: 61523729
+b_cid: 106913646
+b_page: 41
 title: 类型声明 抽象类型 原始类型
 description: "类型声明 抽象类型 原始类型"
 chapter: 6

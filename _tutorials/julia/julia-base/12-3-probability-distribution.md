@@ -1,9 +1,9 @@
 ---
 youtube_id: g1qRz2Q-rOc
 qq_video_id: a0833nvochl
-b_av: 47775635
-b_cid: 83686105
-b_page: 32
+b_av: 61523729
+b_cid: 106640381
+b_page: 9
 title: Julia科学计算之概率分布
 description: "Julia中跟概率统计相关的库"
 chapter: 12
