@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: YNWKSf7Fvck
 qq_video_id: 
 b_av: 73006468
 b_cid: 124799588
@@ -7,7 +7,7 @@ b_page: 6
 title: FPGA时序约束理论篇之xdc约束优先级
 description: "xdc约束优先级"
 chapter: 1
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -73,4 +73,3 @@ set_max_delay 5 -through [get_pins inst0/I0] -through [get_pins inst1/I3]
 ```
 set_max_delay 4 -through [get_pins inst0/I0] -through [get_pins inst1/I3]
 ```
-

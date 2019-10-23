@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: nZIAumNkPlQ
 qq_video_id: 
 b_av: 73006468
 b_cid: 124802760
@@ -7,7 +7,7 @@ b_page: 2
 title: FPGA时序约束理论篇之时序路径与时序模型
 description: "时序路径和时序模型理论"
 chapter: 1
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -17,6 +17,7 @@ index: 2
 ---
 
 
+
 ### 时序路径
 
 &emsp;&emsp;典型的时序路径有4类，如下图所示，这4类路径可分为片间路径（标记①和标记③)和片内路径（标记②和标记④）。
@@ -24,21 +25,21 @@ index: 2
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial2.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial2.png"  alt="" />
 
 </center>
 
 &emsp;&emsp;对于所有的时序路径，我们都要明确其起点和终点，这4类时序路径的起点和终点分别如下表。
-<center>
+
 
 时序路径                              |        起点   | 终点     | 应用约束
---------------------------------------|---------------| -------- | -----
+-------------------------------------|---------------|----------|--------
 ①输入端口到FPGA内部第一级触发器的路径 | ChipA/clk     | rega/D   | set_input_delay
 ②FPGA内部触发器之间的路径             | rega/clk      | regb/D   | create_clock
 ③FPGA内部末级触发器到输出端口的路径   | regb/clk      | ChipB/D  | set_output_delay
 ④FPGA输入端口到输出端口的路径         | 输入端口      | 输出端口 | set_max_delay
 
-</center>
+
 
 &emsp;&emsp;这4类路径中，我们最为关心是②的同步时序路径，也就是FPGA内部的时序逻辑。
 
@@ -50,7 +51,7 @@ index: 2
 
 <center>
 
-<img src="https://note.youdao.com/yws/public/resource/7d47e4aa0853ace5ba365e775fb69177/xmlnote/4913712BD65E450CBA43C8E01051E042/13350" width = "600" height = "350" alt="" />
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial64.png" width = "600" height = "350" alt="" />
 
 
 </center>
@@ -69,7 +70,7 @@ Tclk ≥ Tco + Tlogic + Trouting + Tsetup - Tskew
 
 <center>
 
-<img src="https://note.youdao.com/yws/public/resource/7d47e4aa0853ace5ba365e775fb69177/xmlnote/CD066808B64746DA8EF1E80BC1F57D8F/13298" width = "500" height = "300" alt="" />
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial65.png" width = "500" height = "300" alt="" />
 
 </center>
 
@@ -77,7 +78,7 @@ Tclk ≥ Tco + Tlogic + Trouting + Tsetup - Tskew
 
 <center>
 
-<img src="https://note.youdao.com/yws/public/resource/7d47e4aa0853ace5ba365e775fb69177/xmlnote/B812000FC8D447F59C5059BA79B4DBA6/13334" width = "500" height = "300" alt="" />
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial66.png" width = "500" height = "300" alt="" />
 
 </center>
 
@@ -88,7 +89,7 @@ Tclk ≥ Tco + Tlogic + Trouting + Tsetup - Tskew
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial3.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial3.png"  alt="" />
 
 
 </center>
@@ -108,14 +109,14 @@ Tdata\_path + Tsetup <= Tskew + Tclk
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial4.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial4.png"  alt="" />
 </center>
 
 
 &emsp;&emsp;reg2在边沿2时刻刚刚捕获reg1在边沿1时刻发出的数据，若reg1在边沿2时刻发出的数据过快到达reg2，则会冲掉前面的数据。因此保持时间约束的是同一个边沿。
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial5.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial5.png"  alt="" />
 
 </center>
 
@@ -133,4 +134,3 @@ Tdata\_path =  Tco + Tlogic + Trouting ≥ Tskew + Thold
 
 
 &emsp;&emsp;关于时序约束的基本理论就讲这么多，下面讲具体的约束。
-

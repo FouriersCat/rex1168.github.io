@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: fNOKyJO19Fs
 qq_video_id: 
 b_av: 73006468
 b_cid: 124802329
@@ -7,7 +7,7 @@ b_page: 13
 title: Vivado时序约束辅助工具
 description: ""
 chapter: 3
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -27,21 +27,21 @@ index: 13
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial51.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial51.png"  alt="" />
 </center>
     
 &emsp;&emsp;比如我们要新添加一个主时钟，先选中左边的`Create Clock`，再点击`+`号添加约束，然后就会看到下面的界面，按下图中步骤操作。
     
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial52.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial52.png"  alt="" />
 </center>
 
 其中，选择时钟按钮会弹出一个新的窗口，如下图所示，我们只需根据时钟名字进行查找并选择即可。
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial53.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial53.png"  alt="" />
 </center>
 
 ## 2. 时序约束向导
@@ -50,7 +50,10 @@ index: 13
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial54.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial54.png"  alt="" />
 </center>
 
 &emsp;&emsp;时序约束向导会按照主时钟约束、衍生时钟约束、输入延迟约束、输出延迟约束、时序例外约束、异步时钟约束等的顺序引导设计者创建约束。
+
+
+

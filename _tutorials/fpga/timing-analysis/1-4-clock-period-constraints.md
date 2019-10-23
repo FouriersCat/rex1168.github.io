@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: rp6xn4uPOM4
 qq_video_id: 
 b_av: 73006468
 b_cid: 124803254
@@ -7,7 +7,7 @@ b_page: 4
 title: FPGA时序约束理论篇之时钟周期约束
 description: "时钟周期约束理论"
 chapter: 1
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -18,7 +18,7 @@ index: 4
 
 
 
-##  时钟周期约束
+## 时钟周期约束
 
 &emsp;&emsp;时钟周期约束，顾名思义，就是我们对时钟的周期进行约束，这个约束是我们用的最多的约束了，也是最重要的约束。
 
@@ -49,7 +49,7 @@ create_clock -name <name> -period <period> -waveform {<rise_time> <fall_time>} [
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial10.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial10.png"  alt="" />
 
 </center>
 
@@ -57,7 +57,7 @@ create_clock -name <name> -period <period> -waveform {<rise_time> <fall_time>} [
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial11.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial11.png"  alt="" />
 
 </center>
 
@@ -69,7 +69,7 @@ create_clock -name <name> -period <period> -waveform {<rise_time> <fall_time>} [
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial12.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial12.png"  alt="" />
 
 </center>
 
@@ -78,7 +78,7 @@ create_clock -name <name> -period <period> -waveform {<rise_time> <fall_time>} [
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial13.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial13.png"  alt="" />
 
 </center>
 
@@ -104,7 +104,7 @@ create_clock -name gt6_txusrclk_i -period 12.8 [get_pins mgtEngine/ROCKETIO_WRAP
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial14.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial14.png"  alt="" />
 
 </center>
 
@@ -192,7 +192,7 @@ create_generated_clock -name <generated_clock_name> \
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial15.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial15.png"  alt="" />
 
 </center>
 
@@ -201,7 +201,7 @@ create_generated_clock -name <generated_clock_name> \
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial16.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial16.png"  alt="" />
 
 </center>
 
@@ -223,7 +223,7 @@ create_generated_clock -name <generated_clock_name> \
  **3. set_clock_groups**
  
  使用方法为：
-```
+ ```
  set_clock_groups -asynchronous -group <clock_name_1> -group <clock_name_2>
  set_clock_groups -physically_exclusive  -group <clock_name_1> -group <clock_name_2>
 ```
@@ -249,7 +249,7 @@ set_clock_groups -asynchronous -group "clk1A clk1B clk1C" -group clk2
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial17.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial17.png"  alt="" />
 </center>
 
 在这种情况下，我们需要设置的时序约束如下：
@@ -260,7 +260,7 @@ set_clock_groups -logically_exclusive \
 ```
 
 
- ** 创建虚拟时钟**
+ **4. 创建虚拟时钟**
  
 &emsp;&emsp;虚拟时钟通常用于设定对输入和输出的延迟约束，这个约束其实是属于IO约束中的延迟约束，之所以放到这里来讲，是因为虚拟时钟的创建，用到了本章节讲的一些理论。虚拟时钟和前面讲的延迟约束的使用场景不太相同。顾名思义，虚拟时钟，就是没有与之绑定的物理管脚。
 虚拟时钟主要用于以下三个场景：
@@ -277,7 +277,7 @@ set_clock_groups -logically_exclusive \
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial18.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial18.png"  alt="" />
 
 </center>
 
@@ -297,7 +297,7 @@ set_input_delay 2 -clock virclk [get_ports B]
 注意，虚拟时钟必须在约束I/O延迟之前被定义。
 
 
- ## 最大最小延迟约束
+ 5. 最大最小延迟约束
  
 &emsp;&emsp;顾名思义，就是设置路径的max/min delay，主要应用场景有两个：
  - 输入管脚的信号经过组合逻辑后直接输出到管脚
@@ -305,7 +305,7 @@ set_input_delay 2 -clock virclk [get_ports B]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial19.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial19.png"  alt="" />
 
 </center>
 
@@ -322,4 +322,5 @@ set_min_delay <delay> [-from <node_list>] [-to <node_list>][-through <node_list>
 -through  | 有效的节点包含:引脚,端口,线网.
 
 &emsp;&emsp;max/min delay的约束平时用的相对少一些，因为在跨异步时钟域时，我们往往会设置`asynchronous`或者`false_path`。对于异步时钟，我们一般都会通过设计来保证时序能够收敛，而不是通过时序约束来保证。
+
 

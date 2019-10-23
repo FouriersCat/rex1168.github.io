@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: ifvS9LtNI8s
 qq_video_id: 
 b_av: 73006468
 b_cid: 124804340
@@ -7,7 +7,7 @@ b_page: 5
 title: FPGA时序约束理论篇之两种时序例外
 description: "伪路径约束和多周期路径约束理论"
 chapter: 1
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -15,6 +15,7 @@ publish-date: 2019-07-07
 thumbnail: /static/img/course_cover-small/fpga-timing.png
 index: 5
 ---
+
 
 ## 两种时序例外
 
@@ -27,7 +28,7 @@ index: 5
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial20.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial20.png"  alt="" />
 
 </center>
 
@@ -73,7 +74,7 @@ num_cycles [-setup  -hold]      | 建立/保持时间的周期个数
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial21.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial21.png"  alt="" />
 
 </center>
 
@@ -81,7 +82,7 @@ num_cycles [-setup  -hold]      | 建立/保持时间的周期个数
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial22.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial22.png"  alt="" />
 
 </center>
 
@@ -89,7 +90,7 @@ num_cycles [-setup  -hold]      | 建立/保持时间的周期个数
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial23.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial23.png"  alt="" />
 
 </center>
 
@@ -103,7 +104,7 @@ set_multicycle_path 2 -setup -from [get_pins data0_reg/C] -to [get_pins data1_re
 在建立时间被修改后，保持时间也会自动调整到捕获时钟沿的前一个时钟沿，如下图所示。
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial24.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial24.png"  alt="" />
 
 </center>
 
@@ -122,7 +123,7 @@ set_multicycle_path 1 -hold  -from [get_pins data0_reg/C]  -to [get_pins data1_r
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial25.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial25.png"  alt="" />
 </center>
 
 &emsp;&emsp;在单时钟域下，若数据经过N个周期到达，则约束示例如下：
@@ -136,7 +137,7 @@ set_multicycle_path N-1 -hold  -from [get_pins data0_reg/C]  -to [get_pins data1
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial26.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial26.png"  alt="" />
 
 </center>
 
@@ -144,7 +145,7 @@ set_multicycle_path N-1 -hold  -from [get_pins data0_reg/C]  -to [get_pins data1
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial27.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial27.png"  alt="" />
 
 </center>
 
@@ -158,14 +159,14 @@ set_multicycle_path 2 -setup -from [get_clocks CLK1] -to [get_clocks CLK2]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial28.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial28.png"  alt="" />
 </center>
 
 &emsp;&emsp;那如果接收端的时钟比发送端的时钟超前了怎么处理？
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial29.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial29.png"  alt="" />
 </center>
 
 &emsp;&emsp;同样的，时钟周期为4ns，但接收端时钟超前了0.3ns，从图中可以看出，此时setup是3.7ns，而保持时间是0.3ns。这两个时间基本已经满足了Xilinx器件的要求，因此无需进行约束。
@@ -177,7 +178,7 @@ set_multicycle_path 2 -setup -from [get_clocks CLK1] -to [get_clocks CLK2]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial30.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial30.png"  alt="" />
 </center>
 
 
@@ -185,7 +186,7 @@ set_multicycle_path 2 -setup -from [get_clocks CLK1] -to [get_clocks CLK2]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial31.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial31.png"  alt="" />
 </center>
 
 
@@ -202,7 +203,7 @@ set_multicycle_path 2 -hold -end -from [get_clocks CLK1] -to [get_clocks CLK2]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial32.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial32.png"  alt="" />
 </center>
 
 
@@ -216,14 +217,14 @@ set_multicycle_path 2 -hold -end -from [get_clocks CLK1] -to [get_clocks CLK2]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial33.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial33.png"  alt="" />
 </center>
 
 &emsp;&emsp;假设发起时钟频率是捕获时钟频率的3倍，在没有任何约束的情况下，Vivado默认会按照如下图所示的建立保持时间进行分析。
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial34.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial34.png"  alt="" />
 </center>
 
 &emsp;&emsp;同理，我们可以通过约束，让时序条件更加宽裕。
@@ -235,14 +236,14 @@ set_multicycle_path 2 -hold -from [get_clocks CLK1] -to [get_clocks CLK2]
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial35.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial35.png"  alt="" />
 </center>
 
 针对上面讲的几种多周期路径，总结如下：
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial36.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial36.png"  alt="" />
 </center>
 
 

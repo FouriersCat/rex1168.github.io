@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: edD1r-IVKmg
 qq_video_id: 
 b_av: 73006468
 b_cid: 124803022
@@ -7,7 +7,7 @@ b_page: 3
 title: FPGA时序约束理论篇之IO约束
 description: "IO理论"
 chapter: 1
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -60,7 +60,7 @@ set_property -dict {PACKAGE_PIN AJ16  IOSTANDARD  LVCMOS18} [get_ports "led[0]" 
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial6.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial6.png"  alt="" />
 
 </center>
 
@@ -70,7 +70,7 @@ set_property -dict {PACKAGE_PIN AJ16  IOSTANDARD  LVCMOS18} [get_ports "led[0]" 
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial7.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial7.png"  alt="" />
 
 </center>
 
@@ -87,7 +87,7 @@ set_property -dict {PACKAGE_PIN AJ16  IOSTANDARD  LVCMOS18} [get_ports "led[0]" 
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial8.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial8.png"  alt="" />
 
 </center>
 

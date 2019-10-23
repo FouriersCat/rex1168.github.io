@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: P_1m5u9Oeag
 qq_video_id: 
 b_av: 73006468
 b_cid: 124801250
@@ -7,7 +7,7 @@ b_page: 11
 title: FPGA时序约束实战篇之伪路径约束
 description: ""
 chapter: 2
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -17,7 +17,7 @@ index: 11
 ---
 
 
-## 伪路径约束
+## 5. 伪路径约束
 
 &emsp;&emsp;在不加伪路径的时序约束时，Timing Report会提示很多的error，其中就有跨时钟域的error。
 
@@ -25,14 +25,14 @@ index: 11
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial47.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial47.png"  alt="" />
 </center>
 
 我们可以直接在上面右键，然后设置两个时钟的伪路径。
 
 <center>
 
-![image](https://github.com/Bounce00/pic/blob/master/fpga/timing_toturial62.png?raw=true)
+<img src="https://github.com/Bounce00/pic/blob/master/fpga/timing_toturial62.png?raw=true"  alt="" />
 </center>
 
 这样会在xdc中自动生成如下约束：
@@ -58,7 +58,7 @@ set_false_path -from [get_ports rst_pin]
 &emsp;&emsp;这里需要提示一点，添加了上面这些约束后，综合时会提示xdc文件的的warning。
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial48.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial48.png"  alt="" />
 </center>
 
 但这可能是Vivado的综合过程中，读取到该约束文件时，内部电路并未全都建好，就出现了没有发现`clk_gen_i0/clk_core_i0/inst/mmcm_adv_inst/CLKIN1`等端口的情况，有如下几点证明：
@@ -70,6 +70,9 @@ set_false_path -from [get_ports rst_pin]
 
 <center>
 
-![image](https://github.com/Bounce00/pic/blob/master/fpga/timing_toturial61.png?raw=true)
+<img src="https://github.com/Bounce00/pic/blob/master/fpga/timing_toturial61.png?raw=true"  alt="" />
 
 </center>
+
+
+

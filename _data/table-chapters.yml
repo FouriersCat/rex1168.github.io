@@ -37,12 +37,14 @@ base:
 HLS:
   chapter-names:
     - ch1
+    
 timing-analysis:
   chapter-names:
     - FPGA时序约束理论
     - FPGA时序约束实战
     - Vivado时序约束辅助工具
     - Vivado时序约束Tcl命令的对象及属性
+
 python-parallel-computing:
   chapter-names:
     - Python并行计算

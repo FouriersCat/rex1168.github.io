@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: kiCkWF3rsl0
 qq_video_id: 
 b_av: 73006468
 b_cid: 124802496
@@ -7,7 +7,7 @@ b_page: 1
 title: FPGA时序约束理论篇之建立保持时间
 description: "建立时间 保持时间理论"
 chapter: 1
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -16,6 +16,7 @@ thumbnail: /static/img/course_cover-small/fpga-timing.png
 index: 1
 ---
 
+ 
  
 
 # 读万卷书--时序约束理论篇           
@@ -38,7 +39,7 @@ index: 1
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial0.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial0.png"  alt="" />
 
 </center>
 
@@ -46,9 +47,12 @@ index: 1
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial1.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial1.png"  alt="" />
 
 </center>
+
+
+
 
 
 

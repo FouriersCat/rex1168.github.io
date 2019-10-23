@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: I60g0cCpZsM
 qq_video_id: 
 b_av: 73006468
 b_cid: 124801729
@@ -7,7 +7,7 @@ b_page: 12
 title: FPGA时序约束实战篇之多周期路径约束
 description: ""
 chapter: 2
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -27,7 +27,7 @@ index: 12
 
 <center>
 
-![image](https://github.com/Bounce00/pic/blob/master/fpga/timing_toturial63.png?raw=true)
+<img src="https://github.com/Bounce00/pic/blob/master/fpga/timing_toturial63.png?raw=true"  alt="" />
 
 </center>
 
@@ -131,7 +131,7 @@ set_multicycle_path 89 -hold -from [get_cells uart_tx_i0/uart_tx_ctl_i0/* -filte
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial49.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial49.png"  alt="" />
 
 </center>
 
@@ -140,7 +140,7 @@ set_multicycle_path 89 -hold -from [get_cells uart_tx_i0/uart_tx_ctl_i0/* -filte
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial49.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial49.png"  alt="" />
 
 </center>
 
@@ -191,3 +191,6 @@ begin
 end 
 ```
 把寄存器的赋值分开，功能还是一样的，只是分到了几个always中，这样就不会导致时序问题了。
+
+
+

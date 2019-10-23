@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: LvMuVkUgRnU
 qq_video_id: 
 b_av: 73006468
 b_cid: 124857755
@@ -7,7 +7,7 @@ b_page: 14
 title: Vivado时序约束中Tcl命令的对象及属性
 description: ""
 chapter: 4
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -22,6 +22,7 @@ index: 14
 
 # Vivado时序约束中Tcl命令的对象及属性
 
+<font size=5>
 
 &emsp;&emsp;在前面的章节中，我们用了很多Tcl的指令，但有些指令并没有把所有的参数多列出来解释，这一节，我们就把约束中的Tcl指令详细讲一下。
 
@@ -29,7 +30,7 @@ index: 14
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial55.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial55.png"  alt="" />
 </center>
 
 `get_clocks`后面的对象是我们之前通过`create_clocks`或者`create_generated_clocks`创建的时钟，不在硬件上直接映射。
@@ -47,7 +48,7 @@ report_property $inst
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial56.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial56.png"  alt="" />
 </center>
 
 `get_ports`的使用方法如下：
@@ -77,7 +78,7 @@ get_ports -filter {BUS_NAME != ""}
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial57.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial57.png"  alt="" />
 </center>
 
 `get_cells`的使用方法如下：
@@ -106,7 +107,7 @@ get_cells -filter {REF_NAME == LUT3} *uart_tx_i0/*/*
 获取pin的property，如下：
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial58.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial58.png"  alt="" />
 </center>
 
 
@@ -140,7 +141,7 @@ get_pins -filter {DIRECTION == IN} cmd_parse_i0/*/*
 获取net的property，如下：
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial59.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial59.png"  alt="" />
 </center>
 
 
@@ -178,7 +179,7 @@ get_clocks|             |     √   |     √       |   √     | √
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial60.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial60.png"  alt="" />
 </center>
 
 &emsp;&emsp;以wave_gen中的`clk_gen_i0`模块为例来说明上面的操作：

@@ -1,5 +1,5 @@
 ---
-youtube_id: y9jbF9whZJE
+youtube_id: EMZgn8v2DGQ
 qq_video_id: 
 b_av: 73006468
 b_cid: 124800959
@@ -7,7 +7,7 @@ b_page: 10
 title: FPGA时序约束实战篇之延迟约束
 description: ""
 chapter: 2
-category: FPGA-Timing-Constraints
+category: timing-analysis
 post-headings:
 author-link: #
 no-video: false
@@ -18,13 +18,12 @@ index: 10
 
 
 
-
 ## 延迟约束
 
 &emsp;&emsp;对于延迟约束，相信很多同学是不怎么用的，主要可能就是不熟悉这个约束，也有的是嫌麻烦，因为有时还要计算PCB上的走线延迟导致的时间差。而且不加延迟约束，Vivado也只是在Timing Report中提示warning，并不会导致时序错误，这也会让很多同学误以为这个约束可有可无。
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial45.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial45.png"  alt="" />
 </center>
 
 
@@ -33,7 +32,7 @@ index: 10
 
 <center>
 
-![image](https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial46.png)
+<img src="https://raw.githubusercontent.com/Bounce00/pic/master/fpga/timing_toturial46.png"  alt="" />
 </center>
 
 &emsp;&emsp;对于输入管脚，首先判断捕获时钟是主时钟还是衍生时钟，如果是主时钟，直接用`set_input_delay`即可，如果是衍生时钟，要先创建虚拟时钟，然后再设置delay。对于输出管脚，判断有没有输出随路时钟，若有，则直接使用`set_output_delay`，若没有，则需要创建虚拟时钟。
