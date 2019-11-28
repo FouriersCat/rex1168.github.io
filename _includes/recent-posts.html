@@ -5,7 +5,7 @@
   </a>
 
   <ul id="recent-update" style="padding-bottom:2em;">
-    {% assign sorted-items = site.tutorials | sort: "publish-date" | reverse | slice: 0, 4 %}
+    {% assign sorted-items = site.tutorials | sort: "publish-date" | reverse | slice: 0, 8 %}
     {% for item in sorted-items %}
     <!-- {{item|inspect}} -->
 

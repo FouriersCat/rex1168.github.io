@@ -34,9 +34,9 @@ advance:
 base:
   chapter-names:
     - ch1
-HLS:
+fpga-skills:
   chapter-names:
-    - ch1
+    - FPGA必备姿势
     
 timing-analysis:
   chapter-names:
@@ -54,4 +54,8 @@ python-basic:
 python-data-proc:
   chapter-names:
     - python数据处理
+
+signal-processing-theory:
+  chapter-names:
+    - 信号处理理论
 

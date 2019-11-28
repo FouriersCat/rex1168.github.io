@@ -38,22 +38,21 @@ index: 1
 可靠性 | 进程间不会相互影响 | 一个线程挂掉导致整个进程挂掉
 分布式 | 适用于多核多机分布式，扩展到多台机器简单 | 适用于多核分布式
 
-
-1. 需要频繁创建销毁的优先用线程
+1.需要频繁创建销毁的优先用线程
 
 &emsp;&emsp;这种原则最常见的应用就是Web服务器了，来一个连接建立一个线程，断了就销毁线程，要是用进程，创建和销毁的代价是很难承受的
 
-2. 需要进行大量计算的优先使用线程
+2.需要进行大量计算的优先使用线程
 
 &emsp;&emsp;所谓大量计算，当然就是要耗费很多CPU，切换频繁了，这种情况下线程是最合适的。
 
 这种原则最常见的是图像处理、算法处理。
 
-3. 强相关的处理用线程，弱相关的处理用进程
+3.强相关的处理用线程，弱相关的处理用进程
 
 &emsp;&emsp;什么叫强相关、弱相关？理论上很难定义，给个简单的例子就明白了.一般的Server需要完成如下任务：消息收发、消息处理。“消息收发”和“消息处理”就是弱相关的任务，而“消息处理”里面可能又分为“消息解码”、“业务处理”，这两个任务相对来说相关性就要强多了。因此“消息收发”和“消息处理”可以分进程设计，“消息解码”、“业务处理”可以分线程设计。当然这种划分方式不是一成不变的，也可以根据实际情况进行调整。
 
-5. 都满足需求的情况下，用你最熟悉、最拿手的方式
+4.都满足需求的情况下，用你最熟悉、最拿手的方式
 
 &emsp;&emsp;至于“数据共享、同步”、“编程、调试”、“可靠性”这几个维度的所谓的“复杂、简单”应该怎么取舍，我只能说：没有明确的选择方法。但我可以告诉你一个选择原则：如果多进程和多线程都能够满足要求，那么选择你最熟悉、最拿手的那个。
 
@@ -63,7 +62,9 @@ index: 1
 
 &emsp;&emsp;python的标准库中提供了两个线程模块：_thread和threading，其中_thread是低级模块，threading是高级模块，对_thread进行了封装，绝大多数情况下，我们只需使用threading这个高级模块即可。    
 
- 1. 添加线程
+
+1.添加线程
+
 ```
 >>> import threading
 >>> threading.active_count() #查看当前已激活的线程数
@@ -71,7 +72,9 @@ index: 1
 >>> threading.enumerate() #查看线程的信息
 [<_MainThread(MainThread, started 21340)>] #当前已激活的线程只有主线程
 ```
- 2. 创建一个新的线程
+
+2.创建一个新的线程
+
 ```
 import threading
 import time 
@@ -101,23 +104,25 @@ def main():
     print(threading.enumerate()) #查看线程信息
     print(threading.current_thread()) #查看当前正在运行的线程
 ```
+
 上面代码打印的结果为：
 ```
-33. T1 started
-34. 2
-35. <Thread(T1, started 16188)>
-36. [<_MainThread(MainThread, started 9836)>, <Thread(T1, started 16188)>]
-37. <_MainThread(MainThread, started 9836)>
-38. T1 finished
-39. T2 started
-40. T1 and T2 finished
-41. <Thread(T2, started 18548)> #因为T2没有join，所以该行打印结果可能会在上面一行的后面
-42. T2 finished
-43. 1
-44. [<_MainThread(MainThread, started 9836)>]
-45. <_MainThread(MainThread, started 9836)>
+1.  T1 started
+2.  2
+3.  <Thread(T1, started 16188)>
+4.  [<_MainThread(MainThread, started 9836)>, <Thread(T1, started 16188)>]
+5.  <_MainThread(MainThread, started 9836)>
+6.  T1 finished
+7.  T2 started
+8.  T1 and T2 finished
+9.  <Thread(T2, started 18548)> #因为T2没有join，所以该行打印结果可能会在上面一行的后面
+10. T2 finished
+11. 1
+12. [<_MainThread(MainThread, started 9836)>]
+13. <_MainThread(MainThread, started 9836)>
 ```
- 3. 线程函数输出
+
+3.线程函数输出
 
 &emsp;&emsp;如果线程函数T1()和T2()有返回值，需要用到queue来实现，而不能使用return。
 ```

@@ -1,0 +1,32 @@
+---
+title: 信号处理
+category: 爱技术
+order: 6
+icon-dir: /static/img/icon/signal-processing.png
+tut-dir: /tutorials/signal/
+description: signal processing tech.
+tut-course-detail:
+- ["/tutorials/signal/signal-processing-theory", "信号处理", "/static/img/course_cover-small/signal-processing.png"]
+---
+
+<div class="section ie-size">
+  <div class="pad-main">
+
+
+<ul class="tut-course-thumbnail">
+  {% for item in page.tut-course-detail %}
+  <li><a href="{{ item[0] }}/">
+      <img class="lazy-img" alt="{{ item[1] }}" src="{{ item[2] }}" 
+        title='{{ item[1] }}'>
+    </a></li>
+  {% endfor %}
+</ul>
+<br>
+
+<p style="font-size: 1.0em;">
+<strong>曾几何时，信号处理也是很火的一个方向，信号处理的各种算法也是相当的折磨人。本科就学习了栅(zha,不念shan)栏效应，研究生期间我才真正知道了原因和导致的结果。其实算法都是相通的，像FIR滤波器、傅里叶变换、小波变换等，在非信号处理领域也有很多应用。想起当年老师教我们的一句话：学会信号处理，走遍天下都不怕！
+</p>
+
+
+</div>
+</div>

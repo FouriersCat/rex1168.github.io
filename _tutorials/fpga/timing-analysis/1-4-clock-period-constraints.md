@@ -159,13 +159,16 @@ create_generated_clock -name <generated_clock_name> \
                        -divide_by <div_factor> \
                        -master_clock <master_clk> \
                        <pin_or_port>
+
 ```
-参数       | 含义
---------   | ----
--name      | 时钟名称
--source    | 产生该时钟的源时钟
--multiply_by  | 源时钟的多少倍频
--divide_by       | 源时钟的多少分频
+
+
+参数         | 含义
+-----------  | ----
+-name        | 时钟名称
+-source      | 产生该时钟的源时钟
+-multiply_by | 源时钟的多少倍频
+-divide_by   | 源时钟的多少分频
 
 
 

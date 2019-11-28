@@ -38,18 +38,19 @@ index: 5
 &emsp;&emsp;但在实际的工程中，经常会碰到数据被发起后，由于路径过长或者逻辑延迟过长要经过多个时钟周期才能到达捕获寄存器；又或者在数据发起的几个周期后，后续逻辑才能使用。这时如果按照单周期路径进行时序检查，就会报出时序违规。因此就需要我们这一节所讲的多周期路径了。
 
 多周期约束的语句是：
+
 ```
 set_multicycle_path <num_cycles> [-setup|-hold] [-start|-end][-from <startpoints>] [-to <endpoints>] [-through <pins|cells|nets>]
 ```
 
 
-参数       | 含义
-------------------------------   | ----
-num_cycles [-setup  -hold]      | 建立/保持时间的周期个数
-[-start  -end]                  | 参数时钟选取
--from <startpoint>               | 发起点
--to <endpoint>                   | 捕获点
--through <pins/cells/nets>       | 经过点
+| 参数                       | 含义                    |
+|----------------------------|-------------------------|
+| num_cycles [-setup  -hold] | 建立/保持时间的周期个数 |
+| [-start  -end]             | 参数时钟选取            |
+| -from <startpoint>         | 发起点                  |
+| -to <endpoint>             | 捕获点                  |
+| -through <pins/cells/nets> | 经过点                  |
 
 
 对于建立时间，num_cycles是指多周期路径所需的时钟周期个数；对于保持时间，num_cycles是指相对于默认的捕获沿，实际捕获沿应回调的周期个数。

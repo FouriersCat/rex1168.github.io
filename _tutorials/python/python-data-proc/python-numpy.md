@@ -38,16 +38,15 @@ np.array的参数列表如下：
 ```python
 numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmin = 0)
 ```
-| parameter | description                         |
-|-----------|-------------------------------------|
-| object    | 要新建的数组对象     |
-| dtype     | 数组的所需数据类型                       |
-| copy      | 对象是否被复制。                 |
-| order     | C（按行）、F（按列）或A（任意，默认）。               |
-| subok     | 默认情况下，返回的数组被强制为基类数组。 如果为true，则返回子类。 |
-| ndmin     | 指定返回数组的最小维数。                        |
 
-
+| parameter | description                                                     |
+|-----------|-----------------------------------------------------------------|
+| object    | 要新建的数组对象                                                |
+| dtype     | 数组的所需数据类型                                              |
+| copy      | 对象是否被复制                                                  |
+| order     | C（按行）、F（按列）或A（任意，默认）                           |
+| subok     | 默认情况下，返回的数组被强制为基类数组。 如果为true，则返回子类 |
+| ndmin     | 指定返回数组的最小维数                                          |
 
 首先来看一维列表的应用
 ```python
@@ -594,12 +593,18 @@ int b = 2;
 int c = a + b;  
 ```
 
-<img src=https://raw.githubusercontent.com/Bounce00/pic/master/python/np1.png width=300 height= />
+
+![image](https://raw.githubusercontent.com/Bounce00/pic/master/python/np1.png)
+
+
 
 Python的解释器只有在运行的时候才会确定变量的类型，解释器会对每个变量进行检查，然后才进行赋值操作。
 
 
-<img src=https://raw.githubusercontent.com/Bounce00/pic/master/python/np2.png width=450 height= />
+
+![image](https://raw.githubusercontent.com/Bounce00/pic/master/python/np2.png)
+
+
 
 
 
@@ -610,7 +615,8 @@ Python的解释器只有在运行的时候才会确定变量的类型，解释�
 python运行慢还有一个重要原因就是python存放数据时往往不是在连续区域，这样就导致数据的索引效率不高。而numpy则采用了C的逻辑，将np.array数据放在连续区域，提高批量数据的读写速度。
 
 
-<img src=https://raw.githubusercontent.com/Bounce00/pic/master/python/np3.png width=550 height= />
+
+![image](https://raw.githubusercontent.com/Bounce00/pic/master/python/np3.png) 
 
 
 
@@ -626,7 +632,10 @@ python运行慢还有一个重要原因就是python存放数据时往往不是�
 
 在np.array中我们经常会用到2D或者多维的数据，但内存中没有维度这个概念，就是存储在连续空间中。我们创建 ndArray 的方式不同, 在这个连续空间上的排列顺序也有不同，我们采用不同方式进行读写的速度也会不同，使用了numpy后发现速度没有提升，多半的原因都是因为对数据的读写方式的问题。
 
-<img src=https://raw.githubusercontent.com/Bounce00/pic/master/python/np4.png width=550 height= />
+
+![image](https://raw.githubusercontent.com/Bounce00/pic/master/python/np4.png)
+
+
 
 Numpy默认与C的存储方式相同，即按行排列，当然我们也可以指定numpy的内存存储方式，当存储方式确定后，再用对应的方法去读写数据，速度就会明显提升。（在.py文件中用time.time()查看运行时间时，运行一次往往不太准确，需要运行多次，看平均时间或者最小最大时间；也可以在ipython（注意是ipython，不是python console）中使用%timeit命令，可以自动给出运行多次后的最小运行时间）。下表是用%timeit统计出来的计算时间。
 
@@ -744,12 +753,12 @@ np.mul(a,2,out = a)
 
 下面的链接是所有可以使用Out参数的函数
 
-[链接 | 可使用Out参数的函数](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs) 
+[可使用Out参数的函数](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs) 
 
 
 **用numpy代替pandas**
 
-[链接 | 文章](http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html)中提出，在数据量比较小时，pandas的效率不如numpy（在实际的使用中，会发现pandas明显比numpy要慢很多），对于一些简单的数据结构，可以使用numpy来代替pandas使用。
+[参考文章](http://gouthamanbalaraman.com/blog/numpy-vs-pandas-comparison.html)中提出，在数据量比较小时，pandas的效率不如numpy（在实际的使用中，会发现pandas明显比numpy要慢很多），对于一些简单的数据结构，可以使用numpy来代替pandas使用。
 
 numpy的结构数组的用法我们上面也提到过，这里做个运算时间的对比。
 
