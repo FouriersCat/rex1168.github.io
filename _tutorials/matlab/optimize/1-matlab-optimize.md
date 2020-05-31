@@ -110,20 +110,22 @@ end
 ```
 &emsp;&emsp;把断点设置在`pass`处，但其实不用这么弄。Matlab中提供了条件断点的设置方式。在循环中右键选择`设置条件断点`，如下图所示。
 
+<center>
 
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200531173815839.png)  
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Bounce00/pic/master/matlab/debug/debug.png">
-</p>
+</center>
 
 
 
 在下面的窗口中填入条件即可，比如`i==100`。
 
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Bounce00/pic/master/matlab/debug/debug2.png">
-</p>
+<center>
+    
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200531173853359.png)
+    
+</center>
 
 
 这样，当程序运行到`i==100`时就会进入断点，不需要自己再写额外的语句。

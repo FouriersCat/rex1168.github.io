@@ -16,7 +16,7 @@ thumbnail: /static/img/course_cover-small/fpga-timing.png
 index: 12
 ---
 
-
+**注：视频中5分37秒之后的内容有错误，在下面的文字部分已经删除，但视频不太好修改。请大家一定要注意，在这里向大家道歉。**
 
 ## 多周期路径约束
 
@@ -152,45 +152,6 @@ set_multicycle_path 89 -hold -from [get_cells uart_tx_i0/uart_tx_ctl_i0/* -filte
 
  4. 第四个就是在设置了多周期后，如果还是提示Intra-Clocks Paths的setup time不过，那就要看下程序，是否写的不规范。比如
 
-
-
-&emsp;&emsp;如果设置了多周期路径后，还是提示`Intra-Clocks Paths`的`setup time`不过，那就要看下程序，是否写的不规范。比如
-```
-always @ (posedge clk)
-begin
-    regA <= regB;
-    
-    if(regA != regB)
-        regC <= 4'hf;
-    else 
-        regC <= {regC[2:0], 1'b0};
-    
-    if((&flag[3:0]) && regA != regB) 
-        regD <= regB;
-end
-```
-这么写的话，如果时钟频率稍微高一点，比如250MHz，就很容易导致从regB到regD的setup time不满足要求。因为begin end里面的代码都是按顺序执行的，要在4ns内完成这些赋值与判断的逻辑，挑战还是挺大的。因此，我们可以改写为：
-```
-always @ (posedge clk)
-begin
-    regA <= regB;
-end 
-
-always @ (posedge clk)
-begin
-    if(regA != regB)
-        regC <= 4'hf;
-    else 
-        regC <= {regC[2:0], 1'b0};
-end 
-
-always @ (posedge phy_clk)
-begin
-    if((&flag[3:0]) && regA != regB) 
-        regD <= regB;
-end 
-```
-把寄存器的赋值分开，功能还是一样的，只是分到了几个always中，这样就不会导致时序问题了。
 
 
 
