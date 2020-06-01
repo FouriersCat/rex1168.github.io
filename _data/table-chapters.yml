@@ -28,12 +28,9 @@ optimize:
 gpu-parallel-computer:
   chapter-names:
     - ch1
-advance:
+cpp-base:
   chapter-names:
-    - ch1
-base:
-  chapter-names:
-    - ch1
+    - C++教程
 fpga-skills:
   chapter-names:
     - FPGA必备姿势
